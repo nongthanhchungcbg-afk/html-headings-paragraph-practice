@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+:root {
+    color: #273b39;
+    background: #f2f5f1;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-synthesis: none;
+    --ink: #273b39;
+    --green: #235c50;
+    --green-mid: #3f796a;
+    --line: #d5ded7;
+    --paper: #fffefa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 42px 24px 30px;
+    background-image: linear-gradient(135deg, rgb(35 92 80 / 4%) 25%, transparent 25%), linear-gradient(315deg, rgb(197 146 69 / 4%) 25%, transparent 25%);
+    background-size: 36px 36px;
+}
+
+.page-header {
+    max-width: 720px;
+    padding: 18px 0 30px;
+    border-bottom: 3px solid #c69245;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 750;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    margin: 0 0 10px;
+    color: #173f38;
+    font-size: 42px;
+    line-height: 1.12;
+}
+
+.lead {
+    max-width: 62ch;
+    margin: 0;
+    color: #586a64;
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+.section {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.section-heading {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+    margin-bottom: 18px;
+}
+
+.step {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    color: #fff;
+    background: var(--green);
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.section-heading h2 {
+    margin: 0 0 5px;
+    color: #173f38;
+    font-size: 25px;
+    line-height: 1.25;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #586a64;
+    line-height: 1.5;
+}
+
+code {
+    display: inline-block;
+    margin: 2px 3px 2px 0;
+    padding: 3px 6px;
+    color: #81501b;
+    background: #f1e9d9;
+    border-radius: 3px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 12px;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.example {
+    min-width: 0;
+    padding: 18px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--green);
+    border-radius: 5px;
+}
+
+.example h3 {
+    margin: 0 0 12px;
+    color: #28584d;
+    font-size: 16px;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.separate-table,
+.separate-table th,
+.separate-table td {
+    border: 1px solid #202020;
+}
+
+.separate-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.collapsed-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #202020;
+}
+
+.collapsed-table th,
+.collapsed-table td {
+    border: 1px solid #202020;
+    padding: 7px;
+    text-align: left;
+}
+
+.example > code {
+    margin-top: 12px;
+}
+
+.table-frame {
+    padding: 10px;
+    overflow: hidden;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    background: #f2f2f2;
+}
+
+.student-table caption {
+    padding: 10px;
+    color: #55675f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    text-align: left;
+}
+
+.student-table th,
+.student-table td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+.student-table th {
+    height: 50px;
+    color: #fff;
+    background: #333;
+    font-weight: 700;
+}
+
+.student-table td {
+    height: 80px;
+    color: #333;
+    background: #f2f2f2;
+    vertical-align: bottom;
+}
+
+.student-table tbody tr:nth-child(even) td {
+    background: #e8ece8;
+}
+
+.property-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+footer {
+    padding: 18px 0 0 56px;
+    color: #5d6e67;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 680px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 11px;
+    }
+
+    .step {
+        width: 34px;
+        height: 34px;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .student-table th,
+    .student-table td {
+        padding: 11px 9px;
+    }
+
+    footer {
+        padding-left: 0;
+    }
+}

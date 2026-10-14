@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bảng trong CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <p class="eyebrow">HTML tables · CSS styling</p>
+            <h1>Bảng trong CSS</h1>
+            <p class="lead">Từ đường viền từng ô đến bảng dữ liệu dễ đọc, các quy tắc CSS giúp trình bày rõ ràng và nhất quán.</p>
+        </header>
+
+        <main>
+            <section class="section">
+                <div class="section-heading">
+                    <span class="step">01</span>
+                    <div>
+                        <h2>Đường viền bảng</h2>
+                        <p>Cả bảng, tiêu đề và ô dữ liệu đều có viền. So sánh <code>separate</code> và <code>collapse</code>.</p>
+                    </div>
+                </div>
+                <div class="comparison">
+                    <article class="example">
+                        <h3>Viền chưa gộp</h3>
+                        <div class="table-scroll">
+                            <table class="separate-table">
+                                <thead>
+                                    <tr><th>Họ tên</th><th>Tuổi</th><th>Lớp</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Nguyễn Văn A</td><td>20</td><td>Web</td></tr>
+                                    <tr><td>Trần Thị B</td><td>21</td><td>Web</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                    <article class="example">
+                        <h3>Viền đã gộp</h3>
+                        <div class="table-scroll">
+                            <table class="collapsed-table">
+                                <thead>
+                                    <tr><th>Họ tên</th><th>Tuổi</th><th>Lớp</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Nguyễn Văn A</td><td>20</td><td>Web</td></tr>
+                                    <tr><td>Trần Thị B</td><td>21</td><td>Web</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <code>border-collapse: collapse;</code>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-heading">
+                    <span class="step">02</span>
+                    <div>
+                        <h2>Danh sách học viên</h2>
+                        <p>Bảng tổng hợp chiều rộng, chiều cao hàng, căn chỉnh, khoảng đệm và màu sắc.</p>
+                    </div>
+                </div>
+                <div class="table-frame">
+                    <div class="table-scroll">
+                        <table class="student-table">
+                            <caption>Khóa học thiết kế và phát triển web</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Họ tên</th>
+                                    <th scope="col">Tuổi</th>
+                                    <th scope="col">Lớp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>20</td>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <td>Trần Thị B</td>
+                                    <td>21</td>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <td>Lê Minh C</td>
+                                    <td>19</td>
+                                    <td>Web</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="property-strip" aria-label="Các thuộc tính CSS được dùng">
+                    <code>width: 100%</code>
+                    <code>height: 50px</code>
+                    <code>text-align: left</code>
+                    <code>vertical-align: bottom</code>
+                    <code>padding: 15px</code>
+                    <code>border-collapse: collapse</code>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>HTML table elements styled with CSS.</p>
+        </footer>
+    </body>
+</html>
