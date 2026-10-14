@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header và Footer</title>
+    <style>
+        :root {
+            color: #273b37;
+            background: #eef3ef;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            font-synthesis: none;
+            scroll-behavior: smooth;
+            --forest: #214f45;
+            --accent: #e3b866;
+            --line: #d7e1da;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 88px 20px 76px;
+            background-image: linear-gradient(135deg, rgb(33 79 69 / 4%) 25%, transparent 25%), linear-gradient(315deg, rgb(196 115 69 / 4%) 25%, transparent 25%);
+            background-size: 38px 38px;
+        }
+
+        .navbar {
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            min-height: 68px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 max(24px, calc((100vw - 1000px) / 2));
+            background: #263a35;
+            border-bottom: 3px solid var(--accent);
+            box-shadow: 0 4px 14px rgb(28 47 41 / 14%);
+        }
+
+        .brand {
+            color: #fffefa;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .navbar nav {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar nav a {
+            display: inline-flex;
+            min-height: 42px;
+            align-items: center;
+            padding: 0 12px;
+            color: #edf3ee;
+            border-radius: 4px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background-color 150ms ease, color 150ms ease;
+        }
+
+        .navbar nav a:hover,
+        .navbar nav a:focus-visible {
+            color: #fff;
+            background: #41665a;
+            outline: none;
+        }
+
+        main {
+            width: min(100%, 900px);
+            margin: 0 auto;
+        }
+
+        .hero,
+        .content-section {
+            scroll-margin-top: 88px;
+            margin: 22px 0;
+            padding: 30px 34px;
+            background: #fffefa;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+        }
+
+        .hero {
+            padding-top: 38px;
+            padding-bottom: 38px;
+            border-top: 4px solid #5c8d76;
+        }
+
+        .eyebrow {
+            margin: 0 0 8px;
+            color: #547c67;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+        }
+
+        h1,
+        h2 {
+            color: var(--forest);
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 36px;
+            line-height: 1.15;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 25px;
+        }
+
+        p {
+            color: #53665e;
+            line-height: 1.7;
+        }
+
+        .hero p:last-child,
+        .content-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-section {
+            min-height: 240px;
+        }
+
+        .section-number {
+            margin: 0 0 8px;
+            color: #b36b43;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.1px;
+        }
+
+        .footer-fixed {
+            position: fixed;
+            z-index: 9;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            min-height: 48px;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            color: #e8eee9;
+            background: #263a35;
+            border-top: 1px solid #557066;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .footer-fixed span {
+            color: var(--accent);
+        }
+
+        @media (max-width: 620px) {
+            body {
+                padding: 104px 12px 68px;
+            }
+
+            .navbar {
+                min-height: 94px;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+                padding: 9px 14px 8px;
+            }
+
+            .brand {
+                font-size: 16px;
+            }
+
+            .navbar nav {
+                width: 100%;
+                gap: 2px;
+            }
+
+            .navbar nav a {
+                min-height: 34px;
+                padding: 0 10px;
+                font-size: 13px;
+            }
+
+            .hero,
+            .content-section {
+                scroll-margin-top: 108px;
+                margin: 14px 0;
+                padding: 23px 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            :root {
+                scroll-behavior: auto;
+            }
+
+            .navbar nav a {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="top">
+        <a class="brand" href="#home">Open Source Records</a>
+        <nav aria-label="Điều hướng chính">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow">STAY IN THE LOOP</p>
+            <h1>Fixed navigation, wherever you scroll.</h1>
+            <p>Thanh điều hướng phía trên luôn nằm trong tầm tay. Cuộn trang để xem header và footer vẫn giữ nguyên vị trí.</p>
+        </section>
+
+        <section class="content-section" id="news">
+            <p class="section-number">01 / NEWS</p>
+            <h2>News</h2>
+            <p>Open Source Records giới thiệu những nghệ sĩ độc lập, câu chuyện hậu trường và các bản phát hành mới từ cộng đồng âm nhạc.</p>
+            <p>Mỗi tháng, chúng tôi tuyển chọn những bản thu đáng chú ý và chia sẻ thêm về quá trình sáng tạo phía sau chúng.</p>
+        </section>
+
+        <section class="content-section" id="contact">
+            <p class="section-number">02 / CONTACT</p>
+            <h2>Contact</h2>
+            <p>Muốn gửi nhạc, đặt câu hỏi hoặc trao đổi về một dự án? Hãy liên hệ với đội ngũ Open Source Records.</p>
+            <p>Email: hello@opensourcerecords.example</p>
+        </section>
+
+        <section class="content-section" id="about">
+            <p class="section-number">03 / ABOUT</p>
+            <h2>About</h2>
+            <p>Chúng tôi là một hãng đĩa nhỏ yêu âm nhạc, cộng tác cởi mở và tin vào sức mạnh của những ý tưởng được chia sẻ.</p>
+            <p>Trang mẫu này có đủ nội dung cuộn để quan sát menu cố định phía trên và thanh chân trang cố định phía dưới.</p>
+        </section>
+    </main>
+
+    <footer class="footer-fixed"><span>OPEN SOURCE RECORDS</span>&nbsp; · &nbsp;Menu luôn sẵn sàng khi bạn cần</footer>
+</body>
+</html>
