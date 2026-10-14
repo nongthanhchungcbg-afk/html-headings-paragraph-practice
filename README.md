@@ -25,6 +25,9 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Tạo form tìm kiếm Google | `GoogleSearchPractice/index.html` |
 | Bảng đơn giản | `HTMLTablePractice/index.html` |
 | Bảng trong CSS | `CSSTablePractice/index.html` (`style.css`) |
+| Quản lý nội dung tràn với Overflow | `CSSOverflowPractice/index.html` (`style.css`, `overflow-result.png`) |
+| Bố cục hai cột bằng Float và Clear | `CSSFloatLayoutPractice/index.html` (`style.css`) |
+| Bố cục cơ bản nhiều vùng | `CSSBasicLayoutPractice/index.html` (`style.css`, `assets/campus.svg`) |
 | Nhúng CSS vào trang HTML | `CSSEmbeddingPractice/index.html` (`style.css`) |
 | Sử dụng bộ chọn CSS | `CSSSelectorsPractice/index.html` (`style.css`) |
 | Danh sách sản phẩm | `ProductTablePractice/index.html` |
