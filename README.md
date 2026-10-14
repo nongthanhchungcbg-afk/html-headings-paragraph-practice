@@ -16,6 +16,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Trang web với màu nền và ảnh nền | `BackgroundImagePractice/index.html` (`style.css`, `images/feature-background.jpg`) |
 | Bố cục fixed header và footer | `FixedHeaderFooterPractice/index.html` |
 | Thanh điều hướng sticky khi cuộn | `CSSStickyNavigationPractice/index.html` (`style.css`, `sticky-nav-top.png`, `sticky-nav-scrolled.png`) |
+| Trang chủ giản lược với header fixed và sidebar | `FixedHeaderHomePractice/index.html` (`style.css`) |
 | Menu dọc dropdown bằng CSS | `CSSVerticalDropdownPractice/index.html` (`style.css`) |
 | Menu ngang dropdown bằng CSS | `CSSHorizontalDropdownPractice/index.html` (`style.css`) |
 | Sử dụng thẻ hình ảnh | `HTMLImagePractice/index.html` |
