@@ -12,6 +12,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Danh sách món ăn và chuẩn bị du lịch | `ListsHTMLPractice/index.html` |
 | Tạo liên kết trong HTML | `HTMLLinksPractice/index.html` |
 | Định dạng văn bản với styles | `HTMLStylesPractice/index.html` |
+| Trang web cá nhân với CSS | `PersonalWebsitePractice/index.html` (`style.css`, `avatar.jpg`) |
 | Sử dụng thẻ hình ảnh | `HTMLImagePractice/index.html` |
 | Form cơ bản | `HTMLFormsPractice/simpleform.html` |
 | Tạo form tìm kiếm Google | `GoogleSearchPractice/index.html` |

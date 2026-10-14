@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+:root {
+    color: #1f3533;
+    background: #f1f5f1;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-synthesis: none;
+    --ink: #1f3533;
+    --green: #17685d;
+    --mint: #dcebe2;
+    --coral: #d66b4a;
+    --line: #d3ded7;
+    --paper: #fffefa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(135deg, rgb(23 104 93 / 4%) 25%, transparent 25%), linear-gradient(315deg, rgb(214 107 74 / 3%) 25%, transparent 25%);
+    background-size: 38px 38px;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    color: #f8fbf7;
+    background: #1f4d45;
+    border-bottom: 5px solid var(--coral);
+}
+
+.header-inner {
+    display: flex;
+    max-width: 1080px;
+    min-height: 74px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 12px 28px;
+}
+
+.monogram {
+    margin: 0;
+    color: #edbd6a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header-note {
+    margin: 0;
+    color: #d3e4dc;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+}
+
+.header-note span,
+footer span {
+    padding: 0 6px;
+    color: #edbd6a;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 245px;
+    gap: 56px;
+    align-items: center;
+    padding: 64px 0 58px;
+    border-bottom: 1px solid var(--line);
+}
+
+.profile-copy {
+    max-width: 650px;
+}
+
+.eyebrow,
+.section-index {
+    margin: 0 0 12px;
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.35px;
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    margin: 0;
+    color: #1f4d45;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.period {
+    color: var(--coral);
+}
+
+.profile-description {
+    max-width: 58ch;
+    margin: 18px 0 24px;
+    color: #536761;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.contact-link {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    gap: 24px;
+    padding: 0 17px;
+    color: #fffefa;
+    background: var(--green);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+    background: #104d44;
+}
+
+.contact-link span {
+    color: #edbd6a;
+    font-size: 19px;
+}
+
+.portrait {
+    position: relative;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.portrait::before {
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    right: -15px;
+    bottom: 15px;
+    left: 15px;
+    border: 2px solid var(--coral);
+    content: "";
+}
+
+.portrait img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 5px solid var(--paper);
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgb(31 53 51 / 14%);
+}
+
+.portrait figcaption {
+    margin-top: 9px;
+    color: #6a7b74;
+    font-size: 11px;
+    text-align: center;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 54px;
+    padding: 43px 0 46px;
+    border-bottom: 1px solid var(--line);
+}
+
+.content-section h2,
+.contact-section h2 {
+    margin: 0 0 18px;
+    color: #1f4d45;
+    font-size: 29px;
+    line-height: 1.2;
+}
+
+.hobbies ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hobbies li {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 13px;
+    border-bottom: 1px solid #dce4dd;
+    color: #344d46;
+}
+
+.hobby-number {
+    color: var(--coral);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.goals > p:not(.section-index) {
+    margin: 0;
+    color: #536761;
+    line-height: 1.7;
+}
+
+.learning-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.learning-tags span {
+    padding: 7px 11px;
+    color: #205d50;
+    background: var(--mint);
+    border: 1px solid #c5dbcd;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 54px;
+    align-items: start;
+    padding: 38px 0 46px;
+}
+
+.contact-section h2 {
+    margin-bottom: 0;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: var(--paper);
+    border: 1px solid #becfc5;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #dce4dd;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+tr:last-child th,
+tr:last-child td {
+    border-bottom: 0;
+}
+
+th {
+    width: 100px;
+    color: #fffefa;
+    background: #1f4d45;
+    font-size: 13px;
+}
+
+td a {
+    color: #17685d;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+footer {
+    padding: 17px 16px;
+    color: #dce8e1;
+    background: #1f4d45;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .header-inner {
+        padding: 12px 20px;
+    }
+
+    .header-note {
+        max-width: 220px;
+        line-height: 1.5;
+        text-align: right;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        padding: 44px 0 40px;
+    }
+
+    .profile-copy {
+        order: 1;
+    }
+
+    .portrait {
+        width: 180px;
+        order: 0;
+    }
+
+    .portrait img {
+        width: 180px;
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .content-grid,
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .content-grid {
+        padding: 34px 0;
+    }
+
+    .contact-section {
+        padding: 32px 0 38px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 0 15px;
+    }
+
+    .header-note {
+        max-width: 175px;
+        font-size: 9px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .profile-description {
+        font-size: 16px;
+    }
+
+    th,
+    td {
+        padding: 11px 9px;
+    }
+}
