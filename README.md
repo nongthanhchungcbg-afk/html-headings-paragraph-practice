@@ -25,6 +25,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Gộp ô bảng với rowspan và colspan | `HTMLTableSpanPractice/index.html` |
 | Thực hành Box Model 1 | `CSSBoxModelPractice/index.html` (`box-model-result.png`) |
 | Thực hành Box Model 2 | `CSSBoxModel2Practice/index.html` (`box-model-2-result.png`) |
+| Thực hành Box Model 3 | `CSSBoxModel3Practice/index.html` (`box-model-3-result.png`) |
 | Lịch họp công ty dùng rowspan và colspan | `MeetingSchedulePractice/index.html` |
 | Thực hành tạo hai form | `HTMLFormsRegistrationPractice/index.html` |
 | Form đăng ký người dùng | `UserRegistrationPractice/index.html` |
