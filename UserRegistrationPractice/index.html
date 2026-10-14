@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng ký người dùng</title>
+        <style>
+            :root {
+                color-scheme: light;
+                font-family: "Segoe UI", Tahoma, sans-serif;
+                color: #263642;
+                background: #edf3f2;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+                margin: 0;
+                padding: 48px 18px;
+                background: linear-gradient(135deg, #edf3f2 0%, #f7f4ec 100%);
+            }
+
+            main {
+                width: min(100%, 520px);
+                margin: 0 auto;
+            }
+
+            .form-panel {
+                padding: 32px;
+                background: #fff;
+                border: 1px solid #d9e3df;
+                border-top: 5px solid #168477;
+                border-radius: 8px;
+                box-shadow: 0 12px 32px rgb(35 57 51 / 8%);
+            }
+
+            h1 {
+                margin: 0 0 8px;
+                color: #145b53;
+                font-size: 28px;
+            }
+
+            .intro {
+                margin: 0 0 26px;
+                color: #64736e;
+                line-height: 1.5;
+            }
+
+            .field {
+                margin: 18px 0;
+            }
+
+            .field > label,
+            legend {
+                display: block;
+                margin-bottom: 7px;
+                font-size: 15px;
+                font-weight: 650;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"] {
+                width: 100%;
+                min-height: 44px;
+                padding: 10px 12px;
+                border: 1px solid #b9c9c4;
+                border-radius: 4px;
+                background: #fff;
+                color: inherit;
+                font: inherit;
+            }
+
+            input:focus-visible {
+                outline: 3px solid rgb(22 132 119 / 22%);
+                border-color: #168477;
+            }
+
+            fieldset {
+                margin: 20px 0 24px;
+                padding: 14px 14px 10px;
+                border: 1px solid #d9e3df;
+                border-radius: 4px;
+            }
+
+            fieldset label {
+                display: inline-flex;
+                align-items: center;
+                gap: 7px;
+                margin: 3px 22px 7px 0;
+                color: #43534e;
+            }
+
+            input[type="radio"] {
+                accent-color: #168477;
+            }
+
+            button {
+                width: 100%;
+                min-height: 46px;
+                border: 0;
+                border-radius: 4px;
+                background: #14776c;
+                color: #fff;
+                font: inherit;
+                font-weight: 650;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #105f56;
+            }
+
+            button:focus-visible {
+                outline: 3px solid rgb(22 132 119 / 35%);
+                outline-offset: 2px;
+            }
+
+            @media (max-width: 480px) {
+                body {
+                    padding: 24px 14px;
+                }
+
+                .form-panel {
+                    padding: 24px 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <form class="form-panel" action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+                <h1>Đăng ký người dùng</h1>
+                <p class="intro">Vui lòng điền thông tin của bạn vào biểu mẫu bên dưới.</p>
+
+                <div class="field">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </div>
+
+                <fieldset>
+                    <legend>Giới tính</legend>
+                    <label><input type="radio" name="gender" value="Nam" required> Nam</label>
+                    <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+                </fieldset>
+
+                <button type="submit">Đăng ký</button>
+            </form>
+        </main>
+    </body>
+</html>
