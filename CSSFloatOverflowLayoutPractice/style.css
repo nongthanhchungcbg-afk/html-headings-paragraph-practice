@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+:root { color: #283a36; background: #eef3ef; font-family: "Segoe UI", Tahoma, sans-serif; font-synthesis: none; --green: #2a6251; --coral: #c66e4e; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 42px 20px; background-image: linear-gradient(135deg, rgb(42 98 81 / 4%) 25%, transparent 25%), linear-gradient(315deg, rgb(198 110 78 / 4%) 25%, transparent 25%); background-size: 36px 36px; }
+main { width: min(100%, 980px); margin: 0 auto; }
+.page-header { margin-bottom: 22px; padding-bottom: 16px; border-bottom: 3px solid var(--coral); }
+.eyebrow, .column-label { margin: 0 0 8px; color: #a35c42; font-size: 10px; font-weight: 800; letter-spacing: 1.2px; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+h1 { margin: 0; color: var(--green); font-size: 34px; }
+.container { width: 100%; overflow: hidden; padding: 17px; background: #e4ece5; border: 1px solid #d3dfd5; border-radius: 6px; }
+.left-column { float: left; width: 60%; min-height: 245px; padding: 24px; background: #fffefa; border-top: 4px solid var(--green); border-radius: 4px; }
+.right-column { float: right; width: 38%; min-height: 245px; padding: 24px; background: #dcebdc; border-top: 4px solid #c39750; border-radius: 4px; }
+.column-label { color: #6b8376; }
+h2 { margin: 0 0 10px; color: var(--green); font-size: 22px; }
+.left-column p:not(.column-label), .right-column p:not(.column-label) { color: #5b6b64; font-size: 13px; line-height: 1.7; }
+.overflow-section { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 20px; align-items: start; margin-top: 22px; padding: 22px; background: #fffefa; border: 1px solid #d7e0d8; border-radius: 6px; }
+.overflow-section h2 { font-size: 19px; }
+.overflow-box { width: 100%; height: 130px; overflow: auto; padding: 12px; color: #384640; background: #e8e9e4; border: 1px solid #c7cec7; font-size: 13px; line-height: 1.65; }
+.overflow-box:focus-visible { outline: 3px solid #58927a; outline-offset: 2px; }
+@media (max-width: 680px) { body { padding: 25px 14px; } h1 { font-size: 29px; } .container { padding: 11px; } .left-column, .right-column { float: none; width: 100%; min-height: 0; padding: 20px; } .right-column { margin-top: 11px; } .overflow-section { grid-template-columns: 1fr; gap: 12px; padding: 18px; } }

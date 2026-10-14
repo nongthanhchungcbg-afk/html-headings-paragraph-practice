@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+:root {
+    color: #263a36;
+    background: #f1f4ef;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-synthesis: none;
+    --green: #285f50;
+    --coral: #c66e4e;
+}
+
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; padding: 42px 20px 0; text-align: center; background-image: linear-gradient(135deg, rgb(40 95 80 / 4%) 25%, transparent 25%), linear-gradient(315deg, rgb(198 110 78 / 4%) 25%, transparent 25%); background-size: 36px 36px; }
+.page-header { width: min(100%, 900px); margin: 0 auto 22px; }
+.eyebrow { margin: 0 0 8px; color: var(--coral); font-size: 10px; font-weight: 800; letter-spacing: 1.3px; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+h1 { margin: 0; color: var(--green); font-size: 36px; }
+nav { display: block; width: min(100%, 900px); margin: 0 auto; padding: 8px; background: #244a40; border-bottom: 3px solid #d2ae69; }
+nav a { display: inline-block; margin: 0 9px; padding: 10px 13px; color: #fffefa; border-radius: 3px; font-size: 13px; text-decoration: none; }
+nav a:hover, nav a:focus-visible { background: #47725d; outline: none; }
+main { width: min(100%, 900px); margin: 0 auto; }
+.column-section { margin-top: 24px; padding: 18px 0 28px; font-size: 0; }
+.box { display: inline-block; width: 31.33%; min-height: 230px; margin: 0 1%; padding: 24px 20px; vertical-align: top; background: #fffefa; border: 1px solid #d8e1d8; border-top: 4px solid var(--green); border-radius: 5px; text-align: left; font-size: 15px; box-shadow: 0 8px 22px rgb(36 60 49 / 6%); }
+.box:nth-child(2) { border-top-color: #c66e4e; }
+.box:nth-child(3) { border-top-color: #bc9b55; }
+.number { color: var(--coral); font-size: 11px; font-weight: 800; }
+.box h2 { margin: 14px 0 9px; color: #2f5648; font-size: 22px; }
+.box p { margin: 0; color: #596b62; font-size: 14px; line-height: 1.7; }
+footer { margin: 22px -20px 0; padding: 18px; color: #dfe8df; background: #244a40; font-size: 12px; }
+footer p { margin: 0; }
+@media (max-width: 680px) { body { padding: 28px 14px 0; } h1 { font-size: 30px; } nav a { margin: 2px; padding: 8px 9px; } .box { width: 48%; margin: 1%; } }
+@media (max-width: 440px) { .box { width: 98%; min-height: 0; margin: 7px 1%; } }

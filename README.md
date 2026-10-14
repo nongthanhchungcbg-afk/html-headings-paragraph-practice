@@ -28,6 +28,9 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Quản lý nội dung tràn với Overflow | `CSSOverflowPractice/index.html` (`style.css`, `overflow-result.png`) |
 | Bố cục hai cột bằng Float và Clear | `CSSFloatLayoutPractice/index.html` (`style.css`) |
 | Bố cục cơ bản nhiều vùng | `CSSBasicLayoutPractice/index.html` (`style.css`, `assets/campus.svg`) |
+| Bố cục với HTML5 semantic | `HTML5SemanticLayoutPractice/index.html` (`style.css`, `assets/campus.svg`) |
+| Bố cục với display và inline-block | `CSSInlineBlockLayoutPractice/index.html` (`style.css`) |
+| Bố cục với Float và Overflow | `CSSFloatOverflowLayoutPractice/index.html` (`style.css`) |
 | Nhúng CSS vào trang HTML | `CSSEmbeddingPractice/index.html` (`style.css`) |
 | Sử dụng bộ chọn CSS | `CSSSelectorsPractice/index.html` (`style.css`) |
 | Danh sách sản phẩm | `ProductTablePractice/index.html` |

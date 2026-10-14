@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục với Float và Overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header class="page-header">
+            <p class="eyebrow">LAYOUT LAB · FLOAT + OVERFLOW</p>
+            <h1>Bố cục trang với float và overflow</h1>
+        </header>
+        <section class="container" aria-label="Bố cục hai cột">
+            <div class="left-column">
+                <span class="column-label">NỘI DUNG CHÍNH</span>
+                <h2>Câu chuyện nổi bật</h2>
+                <p>Cột bên trái chứa nội dung chính. Float đặt khối này sát trái để sidebar có thể nằm cạnh.</p>
+                <p>Trong một trang thực tế, khu vực này có thể hiển thị bài viết, tin tức hoặc thông tin chi tiết.</p>
+            </div>
+            <aside class="right-column">
+                <span class="column-label">SIDEBAR</span>
+                <h2>Bên phải</h2>
+                <p>Nội dung liên quan</p>
+                <p>Tin mới</p>
+            </aside>
+        </section>
+        <section class="overflow-section">
+            <div>
+                <p class="column-label">NỘI DUNG DÀI</p>
+                <h2>Khung có thanh cuộn</h2>
+            </div>
+            <div class="overflow-box" tabindex="0" aria-label="Đoạn văn bản có thể cuộn">
+                Đây là nội dung rất dài để kiểm tra overflow. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nunc in mauris pharetra, a ultricies justo fermentum. Vivamus porta, massa sit amet commodo consequat, neque lorem interdum erat, sed tincidunt mi ligula sed nisi. Curabitur sodales, lorem sit amet finibus posuere, nibh mauris tincidunt lectus, vitae blandit lectus justo sed nibh. Integer a lectus sed arcu tristique viverra. Nội dung tiếp tục vượt quá chiều cao của khung để thanh cuộn xuất hiện và người đọc vẫn xem được toàn bộ văn bản.
+            </div>
+        </section>
+    </main>
+</body>
+</html>
