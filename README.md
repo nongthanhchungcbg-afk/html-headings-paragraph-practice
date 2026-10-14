@@ -15,6 +15,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Trang web cá nhân với CSS | `PersonalWebsitePractice/index.html` (`style.css`, `avatar.jpg`) |
 | Trang web với màu nền và ảnh nền | `BackgroundImagePractice/index.html` (`style.css`, `images/feature-background.jpg`) |
 | Bố cục fixed header và footer | `FixedHeaderFooterPractice/index.html` |
+| Menu dọc dropdown bằng CSS | `CSSVerticalDropdownPractice/index.html` (`style.css`) |
 | Sử dụng thẻ hình ảnh | `HTMLImagePractice/index.html` |
 | Form cơ bản | `HTMLFormsPractice/simpleform.html` |
 | Tạo form tìm kiếm Google | `GoogleSearchPractice/index.html` |
