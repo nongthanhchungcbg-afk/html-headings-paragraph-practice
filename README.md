@@ -4,6 +4,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 
 | Bài thực hành | File |
 | --- | --- |
+| Sử dụng màu sắc trong trang web: xanh dương và xanh lá | `WebsiteColorPractice/index.html` |
 | Tiêu đề và đoạn văn | `index.html` |
 | Định dạng văn bản với HTML Styles | `HTMLTextFormattingPractice/index.html` |
 | Danh sách cơ bản trong HTML | `HTMLListsPractice/index.html` |
