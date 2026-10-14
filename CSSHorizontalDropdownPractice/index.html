@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu ngang Dropdown</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <p class="eyebrow">OPEN SOURCE RECORDS</p>
+            <h1>Menu ngang</h1>
+        </header>
+
+        <main>
+            <nav id="menu" aria-label="Menu chính">
+                <ul class="menu-list">
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li>
+                        <a href="#artists">Nghệ sĩ <span aria-hidden="true">⌄</span></a>
+                        <ul>
+                            <li><a href="#regular-expressions">Regular Expressions</a></li>
+                            <li><a href="#the-parsers">The Parsers</a></li>
+                            <li><a href="#the-quantifiers">The Quantifiers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#releases">Phát hành <span aria-hidden="true">⌄</span></a>
+                        <ul>
+                            <li><a href="#new-albums">Album mới</a></li>
+                            <li><a href="#singles">Đĩa đơn</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#events">Sự kiện <span aria-hidden="true">⌄</span></a>
+                        <ul>
+                            <li><a href="#tour-dates">Lịch diễn</a></li>
+                            <li><a href="#showcase">Showcase</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <section class="content-panel" id="home" aria-labelledby="content-title">
+                <p class="section-label">DISCOVER · LISTEN · CONNECT</p>
+                <h2 id="content-title">Âm nhạc độc lập, kết nối tự do.</h2>
+                <p>Open Source Records đồng hành cùng nghệ sĩ mới và những âm thanh khác biệt.</p>
+                <div class="content-divider"></div>
+                <div class="content-meta">
+                    <span>NEW YORK</span>
+                    <span>EST. 2014</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>OPEN SOURCE RECORDS <span>·</span> MUSIC FOR THE CURIOUS</footer>
+    </body>
+</html>
