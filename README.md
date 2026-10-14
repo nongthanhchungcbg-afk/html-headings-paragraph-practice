@@ -23,6 +23,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Sử dụng bộ chọn CSS | `CSSSelectorsPractice/index.html` (`style.css`) |
 | Danh sách sản phẩm | `ProductTablePractice/index.html` |
 | Gộp ô bảng với rowspan và colspan | `HTMLTableSpanPractice/index.html` |
+| Box Model 2: trang Open Source Records | `CSSBoxModel2RecordsPractice/index.html` (`records-box-model-result-1.png`, `records-box-model-result-2.png`, `records-box-model-result-3.png`) |
 | Thực hành Box Model 1 | `CSSBoxModelPractice/index.html` (`box-model-result.png`) |
 | Thực hành Box Model 2 | `CSSBoxModel2Practice/index.html` (`box-model-2-result.png`) |
 | Thực hành Box Model 3 | `CSSBoxModel3Practice/index.html` (`box-model-3-result.png`) |
