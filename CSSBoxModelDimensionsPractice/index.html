@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model: content-box và border-box</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <header class="page-header">
+                <p class="eyebrow">CSS · BOX MODEL</p>
+                <h1>Kích thước của một chiếc hộp</h1>
+                <p class="intro">Ba thẻ khai báo cùng chiều rộng và chiều cao nhưng không chiếm cùng một không gian. So sánh cách <code>box-sizing</code> tính padding và border.</p>
+            </header>
+
+            <section class="cards" aria-label="So sánh ba thẻ theo box-sizing">
+                <div class="card">
+                    <span class="card-index">01</span>
+                    <h2>content-box</h2>
+                    <p>Width và height chỉ tính phần nội dung. Padding và border cộng thêm bên ngoài.</p>
+                    <code>280 × 150 px</code>
+                </div>
+                <div class="card">
+                    <span class="card-index">02</span>
+                    <h2>border-box</h2>
+                    <p>Padding và border nằm bên trong kích thước đã khai báo.</p>
+                    <code>280 × 150 px</code>
+                </div>
+                <div class="card">
+                    <span class="card-index">03</span>
+                    <h2>border-box</h2>
+                    <p>Cùng kích thước với thẻ hai, nhưng dùng màu nền khác để đối chiếu.</p>
+                    <code>280 × 150 px</code>
+                </div>
+            </section>
+
+            <aside class="measurement-note">
+                <strong>So sánh kích thước ngoài</strong>
+                <span>Thẻ 1: 330 × 200 px</span>
+                <span>Thẻ 2 và 3: 280 × 150 px</span>
+                <small>Chưa tính margin 20 px ở mỗi cạnh.</small>
+            </aside>
+        </main>
+    </body>
+</html>

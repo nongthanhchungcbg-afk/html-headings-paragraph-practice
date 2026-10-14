@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+:root {
+    color: #263a40;
+    background: #f2f5f3;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 46px 24px;
+    background-image: linear-gradient(135deg, rgb(29 87 100 / 4%) 25%, transparent 25%), linear-gradient(315deg, rgb(194 103 75 / 4%) 25%, transparent 25%);
+    background-size: 38px 38px;
+}
+
+main {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.page-header {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #246a70;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    margin: 0;
+    color: #214f58;
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.intro {
+    max-width: 65ch;
+    margin: 12px auto 0;
+    color: #5b6a69;
+    line-height: 1.6;
+}
+
+code {
+    padding: 2px 5px;
+    color: #8c4937;
+    background: #f1e9df;
+    border-radius: 3px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.92em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    padding: 24px 0;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid #3498db;
+    overflow: hidden;
+}
+
+.card:nth-child(1) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+.card:nth-child(2) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+}
+
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
+}
+
+.card-index {
+    color: rgb(30 55 53 / 72%);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.card h2 {
+    margin: 5px 0 4px;
+    color: #203d3b;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 0 0 5px;
+    color: #344c48;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.card code {
+    display: inline-block;
+    font-size: 11px;
+}
+
+.measurement-note {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 22px;
+    padding: 16px 19px;
+    color: #31504d;
+    background: #fffefa;
+    border: 1px solid #d5dfd9;
+    border-left: 4px solid #c2674b;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.measurement-note strong {
+    color: #214f58;
+}
+
+.measurement-note small {
+    color: #71807b;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        padding: 12px 0;
+    }
+
+    .card {
+        margin: 14px 8px;
+    }
+
+    .measurement-note {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 7px;
+    }
+}
