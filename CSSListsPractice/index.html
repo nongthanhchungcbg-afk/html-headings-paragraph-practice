@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Danh sách trong CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <p class="eyebrow">HTML + CSS · Bài thực hành</p>
+            <h1>Danh sách trong CSS</h1>
+            <p class="lead">Thử các kiểu marker, vị trí và khoảng cách bằng những ví dụ danh sách thực tế.</p>
+        </header>
+
+        <main>
+            <section class="lesson-section">
+                <div class="section-heading">
+                    <span class="step-number">01</span>
+                    <div>
+                        <h2>Kiểu marker cơ bản</h2>
+                        <p><code>list-style-type</code> đổi hình dấu đầu dòng hoặc kiểu đánh số.</p>
+                    </div>
+                </div>
+                <div class="demo-grid">
+                    <article class="demo demo-square">
+                        <h3>Môn học · square</h3>
+                        <ul class="square-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                        </ul>
+                    </article>
+                    <article class="demo demo-roman">
+                        <h3>Các bước học · upper-roman</h3>
+                        <ol class="roman-list">
+                            <li>Học HTML</li>
+                            <li>Học CSS</li>
+                            <li>Học JavaScript</li>
+                            <li>Học Git</li>
+                        </ol>
+                    </article>
+                </div>
+            </section>
+
+            <section class="lesson-section">
+                <div class="section-heading">
+                    <span class="step-number">02</span>
+                    <div>
+                        <h2>Marker bằng hình ảnh</h2>
+                        <p><code>list-style-image</code> nhận đường dẫn ảnh qua <code>url()</code>.</p>
+                    </div>
+                </div>
+                <article class="demo demo-image">
+                    <h3>Công cụ học tập</h3>
+                    <ul class="image-list">
+                        <li>Visual Studio Code</li>
+                        <li>Google Chrome</li>
+                        <li>GitHub</li>
+                        <li>Git</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="lesson-section">
+                <div class="section-heading">
+                    <span class="step-number">03</span>
+                    <div>
+                        <h2>Vị trí marker</h2>
+                        <p><code>inside</code> đặt marker trong dòng nội dung; <code>outside</code> đặt marker ở lề ngoài.</p>
+                    </div>
+                </div>
+                <div class="demo-grid">
+                    <article class="demo demo-position">
+                        <h3>outside</h3>
+                        <ul class="outside-list">
+                            <li>Marker nằm ngoài khối nội dung và phần chữ xuống dòng thẳng hàng với chữ đầu tiên.</li>
+                            <li>Dùng khi muốn các dòng nội dung thẳng lề rõ ràng.</li>
+                        </ul>
+                    </article>
+                    <article class="demo demo-position">
+                        <h3>inside</h3>
+                        <ul class="inside-list">
+                            <li>Marker nằm trong khối nội dung nên dòng tiếp theo bắt đầu từ lề trái của khối.</li>
+                            <li>Hữu ích khi danh sách cần nằm gọn trong một vùng màu.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="lesson-section">
+                <div class="section-heading">
+                    <span class="step-number">04</span>
+                    <div>
+                        <h2>Thuộc tính rút gọn</h2>
+                        <p><code>list-style</code> kết hợp kiểu, vị trí và ảnh marker trong cùng một khai báo.</p>
+                    </div>
+                </div>
+                <article class="demo demo-shorthand">
+                    <h3>Danh sách kết hợp</h3>
+                    <ul class="shorthand-list">
+                        <li>Đặt kiểu dự phòng là square</li>
+                        <li>Đặt marker ở bên trong</li>
+                        <li>Dùng ảnh marker cục bộ</li>
+                    </ul>
+                    <code class="code-note">list-style: square inside url("images/list-marker.svg");</code>
+                </article>
+            </section>
+
+            <section class="lesson-section">
+                <div class="section-heading">
+                    <span class="step-number">05</span>
+                    <div>
+                        <h2>Màu sắc và khoảng cách</h2>
+                        <p>Nền, màu chữ, <code>padding</code> và <code>margin</code> giúp danh sách dễ quét hơn.</p>
+                    </div>
+                </div>
+                <article class="demo demo-color">
+                    <h3>Ngôn ngữ lập trình</h3>
+                    <ul class="language-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="lesson-section lesson-final">
+                <div class="section-heading">
+                    <span class="step-number">06</span>
+                    <div>
+                        <h2>Lộ trình học lập trình Web</h2>
+                        <p>Danh sách tổng hợp với marker, màu nền và khoảng cách tùy chỉnh.</p>
+                    </div>
+                </div>
+                <ol class="roadmap-list">
+                    <li>HTML <span>— xây dựng cấu trúc trang</span></li>
+                    <li>CSS <span>— tạo kiểu và bố cục</span></li>
+                    <li>JavaScript <span>— thêm tương tác</span></li>
+                    <li>Git <span>— quản lý phiên bản</span></li>
+                    <li>GitHub <span>— lưu trữ và chia sẻ dự án</span></li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <p>Thực hành các thuộc tính <code>list-style</code> trong CSS.</p>
+        </footer>
+    </body>
+</html>

@@ -8,6 +8,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Tiêu đề và đoạn văn | `index.html` |
 | Định dạng văn bản với HTML Styles | `HTMLTextFormattingPractice/index.html` |
 | Danh sách cơ bản trong HTML | `HTMLListsPractice/index.html` |
+| Danh sách trong CSS | `CSSListsPractice/index.html` (`style.css`, `images/list-marker.svg`) |
 | Danh sách món ăn và chuẩn bị du lịch | `ListsHTMLPractice/index.html` |
 | Tạo liên kết trong HTML | `HTMLLinksPractice/index.html` |
 | Định dạng văn bản với styles | `HTMLStylesPractice/index.html` |
