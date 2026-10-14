@@ -19,5 +19,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Thực hành tạo hai form | `HTMLFormsRegistrationPractice/index.html` |
 | Form đăng ký người dùng | `UserRegistrationPractice/index.html` |
 | Ảnh chụp form đăng ký người dùng | `UserRegistrationPractice/registration-form-screenshot.png` |
+| Survey nghiên cứu thị trường | `CustomerSurveyPractice/index.html` |
+| Ảnh chụp form survey | `CustomerSurveyPractice/customer-survey-screenshot.png` |
 
 Repository: https://github.com/nongthanhchungcbg-afk/html-headings-paragraph-practice
