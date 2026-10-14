@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Market Research Survey</title>
+        <style>
+            :root {
+                font-family: "Segoe UI", Tahoma, sans-serif;
+                color: #253b37;
+                background: #eef3ef;
+                font-synthesis: none;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 36px 18px;
+                background:
+                    radial-gradient(ellipse at 10% 0%, rgb(202 222 198 / 38%), transparent 38%),
+                    #eef3ef;
+            }
+
+            main {
+                width: min(100%, 760px);
+                margin: 0 auto;
+            }
+
+            .survey {
+                overflow: hidden;
+                background: #fffefa;
+                border: 1px solid #d6ded6;
+                border-radius: 8px;
+                box-shadow: 0 14px 40px rgb(36 58 48 / 9%);
+            }
+
+            .survey-header {
+                padding: 30px 36px 26px;
+                color: #fffefa;
+                background: #275c50;
+                border-bottom: 5px solid #d7a74a;
+            }
+
+            .eyebrow {
+                margin: 0 0 8px;
+                color: #e8d49f;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                margin: 0;
+                font-family: Georgia, "Times New Roman", serif;
+                font-size: 32px;
+                font-weight: 600;
+            }
+
+            .intro {
+                max-width: 54ch;
+                margin: 10px 0 0;
+                color: #e0eae4;
+                line-height: 1.6;
+            }
+
+            form {
+                padding: 10px 36px 32px;
+            }
+
+            .question {
+                padding: 22px 0;
+                border-bottom: 1px solid #e6e9e3;
+            }
+
+            .question-title,
+            legend {
+                display: block;
+                width: 100%;
+                margin: 0 0 12px;
+                padding: 0;
+                color: #2c433d;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.45;
+            }
+
+            fieldset {
+                min-width: 0;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            select,
+            input[type="number"],
+            textarea {
+                width: 100%;
+                min-height: 44px;
+                padding: 10px 12px;
+                color: #253b37;
+                background: #fff;
+                border: 1px solid #bac9c1;
+                border-radius: 4px;
+                font: inherit;
+            }
+
+            select:focus-visible,
+            input:focus-visible,
+            textarea:focus-visible {
+                outline: 3px solid rgb(39 92 80 / 18%);
+                border-color: #275c50;
+            }
+
+            .choice-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 9px;
+            }
+
+            .choice {
+                display: inline-flex;
+                min-height: 42px;
+                align-items: center;
+                gap: 9px;
+                padding: 8px 12px;
+                color: #344b44;
+                background: #f5f7f2;
+                border: 1px solid #d8e0d8;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .choice:has(input:checked) {
+                background: #e7f0e8;
+                border-color: #699080;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                width: 17px;
+                height: 17px;
+                margin: 0;
+                accent-color: #275c50;
+                flex: 0 0 auto;
+            }
+
+            .price-fields {
+                display: flex;
+                max-width: 290px;
+                align-items: end;
+                gap: 10px;
+            }
+
+            .price-fields label {
+                display: grid;
+                gap: 5px;
+                color: #64756e;
+                font-size: 13px;
+            }
+
+            .currency {
+                padding-bottom: 11px;
+                color: #52645d;
+                font-size: 18px;
+            }
+
+            textarea {
+                min-height: 112px;
+                resize: vertical;
+            }
+
+            .rating-wrap {
+                overflow: hidden;
+                border: 1px solid #d8e0d8;
+                border-radius: 4px;
+            }
+
+            .rating-table {
+                width: 100%;
+                min-width: 0;
+                border-collapse: collapse;
+                table-layout: fixed;
+                font-size: 13px;
+            }
+
+            .rating-table th,
+            .rating-table td {
+                padding: 9px 5px;
+                border-bottom: 1px solid #e3e8e1;
+                text-align: center;
+                overflow-wrap: anywhere;
+            }
+
+            .rating-table thead th {
+                color: #fff;
+                background: #3e7364;
+                font-weight: 650;
+            }
+
+            .rating-table thead th:first-child {
+                width: 40%;
+                text-align: left;
+            }
+
+            .rating-table tbody th {
+                text-align: left;
+                font-weight: 600;
+            }
+
+            .rating-table tbody tr:last-child th,
+            .rating-table tbody tr:last-child td {
+                border-bottom: 0;
+            }
+
+            .rating-table input {
+                width: 18px;
+                height: 18px;
+                accent-color: #275c50;
+            }
+
+            .submit-row {
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 24px;
+            }
+
+            button {
+                min-width: 150px;
+                min-height: 48px;
+                padding: 11px 22px;
+                color: #fffefa;
+                background: #275c50;
+                border: 0;
+                border-radius: 4px;
+                font: inherit;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #1c493f;
+            }
+
+            button:focus-visible {
+                outline: 3px solid #d7a74a;
+                outline-offset: 3px;
+            }
+
+            .success {
+                display: none;
+                margin: 0 0 18px;
+                padding: 13px 15px;
+                color: #1e5747;
+                background: #e8f4e9;
+                border-left: 4px solid #3e8c67;
+            }
+
+            .success.visible {
+                display: block;
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    padding: 16px 10px;
+                }
+
+                .survey-header {
+                    padding: 24px 20px 21px;
+                }
+
+                h1 {
+                    font-size: 27px;
+                }
+
+                form {
+                    padding: 4px 20px 24px;
+                }
+
+                .question {
+                    padding: 19px 0;
+                }
+
+                .choice-list {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+
+                .choice {
+                    padding: 8px;
+                }
+
+                .rating-table {
+                    font-size: 10px;
+                    line-height: 1.25;
+                }
+
+                .rating-table th,
+                .rating-table td {
+                    padding: 7px 3px;
+                }
+
+                .submit-row button {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article class="survey">
+                <header class="survey-header">
+                    <p class="eyebrow">Customer research</p>
+                    <h1>Market Research Survey</h1>
+                    <p class="intro">Please take a few moments to complete this satisfaction survey.</p>
+                </header>
+
+                <form id="survey-form">
+                    <section class="question">
+                        <label class="question-title" for="age-range">What is your age range?</label>
+                        <select id="age-range" name="age_range" required>
+                            <option value="">Select your age range</option>
+                            <option>18-24</option>
+                            <option>25-34</option>
+                            <option>35-50</option>
+                            <option>50+</option>
+                        </select>
+                    </section>
+
+                    <section class="question">
+                        <label class="question-title" for="income-range">What is your yearly income range?</label>
+                        <select id="income-range" name="income_range" required>
+                            <option value="">Select your income range</option>
+                            <option>$0 - $25,000</option>
+                            <option>$25,001 - $50,000</option>
+                            <option>$50,001 - $100,000</option>
+                            <option>$100,000+</option>
+                        </select>
+                    </section>
+
+                    <fieldset class="question">
+                        <legend>Gender Identity</legend>
+                        <div class="choice-list">
+                            <label class="choice"><input type="radio" name="gender" value="Male"> Male</label>
+                            <label class="choice"><input type="radio" name="gender" value="Female"> Female</label>
+                            <label class="choice"><input type="radio" name="gender" value="Nonbinary"> Nonbinary</label>
+                            <label class="choice"><input type="radio" name="gender" value="Other"> Other</label>
+                        </div>
+                        <div class="field-other" hidden>
+                            <label class="question-title" for="gender-other">Please specify</label>
+                            <input id="gender-other" type="text" name="gender_other" maxlength="250" placeholder="Optional">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="question">
+                        <legend>Which of the following products have you purchased in the last 2 months? Please check all that apply.</legend>
+                        <div class="choice-list">
+                            <label class="choice"><input type="checkbox" name="products" value="Product 1"> Product 1</label>
+                            <label class="choice"><input type="checkbox" name="products" value="Product 2"> Product 2</label>
+                            <label class="choice"><input type="checkbox" name="products" value="Product 3"> Product 3</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="question">
+                        <legend>How often would you use our new product?</legend>
+                        <div class="choice-list">
+                            <label class="choice"><input type="radio" name="usage_frequency" value="Daily"> Daily</label>
+                            <label class="choice"><input type="radio" name="usage_frequency" value="Weekly"> Weekly</label>
+                            <label class="choice"><input type="radio" name="usage_frequency" value="Monthly"> Monthly</label>
+                        </div>
+                    </fieldset>
+
+                    <section class="question">
+                        <label class="question-title" for="price-dollars">What would you pay for the new product?</label>
+                        <div class="price-fields">
+                            <span class="currency">$</span>
+                            <label for="price-dollars">Dollars<input id="price-dollars" name="price_dollars" type="number" min="0" step="1" inputmode="numeric"></label>
+                            <span class="currency">.</span>
+                            <label for="price-cents">Cents<input id="price-cents" name="price_cents" type="number" min="0" max="99" step="1" inputmode="numeric"></label>
+                        </div>
+                    </section>
+
+                    <section class="question">
+                        <label class="question-title" for="features">What features would you like to see in the new product?</label>
+                        <textarea id="features" name="features"></textarea>
+                    </section>
+
+                    <fieldset class="question">
+                        <legend>Please rate your level of agreement with the following statements.</legend>
+                        <div class="rating-wrap">
+                            <table class="rating-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Strongly Disagree</th>
+                                        <th scope="col">Disagree</th>
+                                        <th scope="col">Agree</th>
+                                        <th scope="col">Strongly Agree</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Our products are priced fairly.</th>
+                                        <td><input type="radio" name="rating_price" value="1" aria-label="Strongly Disagree" required></td>
+                                        <td><input type="radio" name="rating_price" value="2" aria-label="Disagree"></td>
+                                        <td><input type="radio" name="rating_price" value="3" aria-label="Agree"></td>
+                                        <td><input type="radio" name="rating_price" value="4" aria-label="Strongly Agree"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Our products are high quality.</th>
+                                        <td><input type="radio" name="rating_quality" value="1" aria-label="Strongly Disagree" required></td>
+                                        <td><input type="radio" name="rating_quality" value="2" aria-label="Disagree"></td>
+                                        <td><input type="radio" name="rating_quality" value="3" aria-label="Agree"></td>
+                                        <td><input type="radio" name="rating_quality" value="4" aria-label="Strongly Agree"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">You would recommend our product to a friend or coworker.</th>
+                                        <td><input type="radio" name="rating_recommend" value="1" aria-label="Strongly Disagree" required></td>
+                                        <td><input type="radio" name="rating_recommend" value="2" aria-label="Disagree"></td>
+                                        <td><input type="radio" name="rating_recommend" value="3" aria-label="Agree"></td>
+                                        <td><input type="radio" name="rating_recommend" value="4" aria-label="Strongly Agree"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+
+                    <p class="success" id="success-message" role="status">Thank you. Your survey response has been recorded in this preview.</p>
+                    <div class="submit-row">
+                        <button type="submit">Submit Survey</button>
+                    </div>
+                </form>
+            </article>
+        </main>
+        <script>
+            const surveyForm = document.getElementById("survey-form");
+            const genderOther = surveyForm.querySelector(".field-other");
+            const successMessage = document.getElementById("success-message");
+
+            surveyForm.addEventListener("change", (event) => {
+                if (event.target.name === "gender") {
+                    genderOther.hidden = event.target.value !== "Other";
+                }
+            });
+
+            surveyForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+                successMessage.classList.add("visible");
+                successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+            });
+        </script>
+    </body>
+</html>
