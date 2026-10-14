@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lịch họp công ty</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 32px 16px;
+                color: #283934;
+                background: #f3f6f3;
+                font-family: "Segoe UI", Tahoma, sans-serif;
+            }
+
+            main {
+                max-width: 820px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                color: #24594d;
+            }
+
+            .table-wrap {
+                overflow-x: auto;
+                background: #fff;
+                border: 1px solid #cdd9d2;
+                border-radius: 6px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                padding: 14px 16px;
+                border: 1px solid #d5dfd8;
+                text-align: left;
+            }
+
+            th {
+                color: #fff;
+                background: #24594d;
+            }
+
+            tbody tr:nth-child(even) {
+                background: #eff5f0;
+            }
+
+            td[rowspan] {
+                color: #24594d;
+                font-weight: 700;
+                vertical-align: middle;
+            }
+
+            td[colspan] {
+                color: #285c4e;
+                background: #e2efe7;
+                font-weight: 650;
+                text-align: center;
+            }
+
+            @media (max-width: 520px) {
+                th,
+                td {
+                    padding: 11px 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Lịch họp công ty</h1>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Ngày</th>
+                            <th scope="col">Giờ</th>
+                            <th scope="col">Nội dung cuộc họp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Thứ Hai</td>
+                            <td>09:00 - 10:00</td>
+                            <td>Họp kế hoạch tuần</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:00</td>
+                            <td>Rà soát tiến độ dự án</td>
+                        </tr>
+                        <tr>
+                            <td>Thứ Ba</td>
+                            <td colspan="2">09:00 - 11:00 · Hội thảo chiến lược (2 giờ)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Thứ Tư</td>
+                            <td>10:00 - 11:00</td>
+                            <td>Họp nhóm thiết kế</td>
+                        </tr>
+                        <tr>
+                            <td>15:00 - 16:00</td>
+                            <td>Họp nhóm phát triển</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>

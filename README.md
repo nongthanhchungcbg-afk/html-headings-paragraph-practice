@@ -17,6 +17,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Bảng đơn giản | `HTMLTablePractice/index.html` |
 | Danh sách sản phẩm | `ProductTablePractice/index.html` |
 | Gộp ô bảng với rowspan và colspan | `HTMLTableSpanPractice/index.html` |
+| Lịch họp công ty dùng rowspan và colspan | `MeetingSchedulePractice/index.html` |
 | Thực hành tạo hai form | `HTMLFormsRegistrationPractice/index.html` |
 | Form đăng ký người dùng | `UserRegistrationPractice/index.html` |
 | Ảnh chụp form đăng ký người dùng | `UserRegistrationPractice/registration-form-screenshot.png` |
