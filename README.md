@@ -15,6 +15,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Form cơ bản | `HTMLFormsPractice/simpleform.html` |
 | Tạo form tìm kiếm Google | `GoogleSearchPractice/index.html` |
 | Bảng đơn giản | `HTMLTablePractice/index.html` |
+| Danh sách sản phẩm | `ProductTablePractice/index.html` |
 | Gộp ô bảng với rowspan và colspan | `HTMLTableSpanPractice/index.html` |
 | Thực hành tạo hai form | `HTMLFormsRegistrationPractice/index.html` |
 | Form đăng ký người dùng | `UserRegistrationPractice/index.html` |
