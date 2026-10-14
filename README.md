@@ -18,6 +18,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Tạo form tìm kiếm Google | `GoogleSearchPractice/index.html` |
 | Bảng đơn giản | `HTMLTablePractice/index.html` |
 | Bảng trong CSS | `CSSTablePractice/index.html` (`style.css`) |
+| Nhúng CSS vào trang HTML | `CSSEmbeddingPractice/index.html` (`style.css`) |
 | Danh sách sản phẩm | `ProductTablePractice/index.html` |
 | Gộp ô bảng với rowspan và colspan | `HTMLTableSpanPractice/index.html` |
 | Lịch họp công ty dùng rowspan và colspan | `MeetingSchedulePractice/index.html` |

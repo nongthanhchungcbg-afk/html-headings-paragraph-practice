@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nhúng CSS vào trang HTML</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .internal-title {
+                color: #226b5b;
+            }
+
+            .internal-text {
+                color: #435c54;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header class="page-header">
+                <p class="eyebrow">HTML · CSS basics</p>
+                <h1>Ba cách nhúng CSS</h1>
+                <p class="intro">Cùng một nội dung, ba cách đặt quy tắc màu sắc trong trang web.</p>
+            </header>
+
+            <section class="example inline-example">
+                <p class="method">01 / INLINE STYLE</p>
+                <h2 style="color: #bd563e;">CSS nội tuyến</h2>
+                <p style="color: #71493f;">Màu sắc được khai báo trực tiếp trong thuộc tính <code>style</code> của từng phần tử.</p>
+            </section>
+
+            <section class="example internal-example">
+                <p class="method">02 / INTERNAL STYLE</p>
+                <h2 class="internal-title">CSS nội bộ</h2>
+                <p class="internal-text">Quy tắc được đặt trong thẻ <code>&lt;style&gt;</code> ở phần <code>&lt;head&gt;</code> và áp dụng qua class.</p>
+            </section>
+
+            <section class="example external-example">
+                <p class="method">03 / EXTERNAL STYLE</p>
+                <h2 class="external-title">CSS bên ngoài</h2>
+                <p class="external-text">Màu sắc được định nghĩa trong file <code>style.css</code> liên kết với trang HTML.</p>
+            </section>
+        </main>
+    </body>
+</html>
