@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góc Hoạt Hình</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Góc Hoạt Hình - Trang chủ"><span class="brand-mark">G</span><span>góc hoạt hình</span></a>
+        <nav aria-label="Điều hướng chính">
+            <a class="nav-link active" href="#library">Phim</a>
+            <a class="nav-link" href="#library">Bộ sưu tập</a>
+            <a class="nav-link" href="#player">Đang xem</a>
+        </nav>
+        <span class="safe-badge"><span></span> Không quảng cáo trên trang</span>
+    </header>
+
+    <main id="top">
+        <section class="welcome" aria-labelledby="welcome-title">
+            <div>
+                <p class="eyebrow">RẠP PHIM NHỎ CỦA BẠN</p>
+                <h1 id="welcome-title">Chuyện hay, xem cùng nhau.</h1>
+                <p>Phim hoạt hình chọn lọc, thuyết minh tiếng Việt.</p>
+            </div>
+            <span class="welcome-art" aria-hidden="true">✦</span>
+        </section>
+
+        <section class="watch-layout" id="library">
+            <aside class="library-panel" aria-labelledby="library-title">
+                <div class="library-heading">
+                    <div>
+                        <p class="eyebrow">DÀNH CHO BẠN</p>
+                        <h2 id="library-title">Thư viện phim</h2>
+                    </div>
+                    <span id="result-count" class="result-count">4 phim</span>
+                </div>
+                <label class="search-box">
+                    <span class="sr-only">Tìm phim theo tên</span>
+                    <span aria-hidden="true">⌕</span>
+                    <input id="search-input" type="search" placeholder="Tìm phim..." autocomplete="off">
+                </label>
+                <label class="sort-control" for="sort-select">
+                    <span>Sắp xếp</span>
+                    <select id="sort-select">
+                        <option value="newest">Mới cập nhật</option>
+                        <option value="popular">Nhiều lượt xem</option>
+                    </select>
+                </label>
+                <div id="film-list" class="film-list" aria-live="polite"></div>
+                <p id="empty-state" class="empty-state" hidden>Chưa tìm thấy phim phù hợp.</p>
+            </aside>
+
+            <section class="player-panel" id="player" aria-labelledby="player-title">
+                <div class="player-heading">
+                    <div>
+                        <p class="eyebrow">ĐANG PHÁT</p>
+                        <h2 id="player-title">Mèo Mây và khu vườn</h2>
+                    </div>
+                    <span id="quality-badge" class="quality-badge">HD · 1080p</span>
+                </div>
+                <div class="player-frame">
+                    <video id="html5-player" controls playsinline preload="metadata" poster="assets/garden.svg">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="media/big-buck-bunny-sample.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ phát video HTML5.
+                    </video>
+                    <iframe id="youtube-player" title="Video hoạt hình mẫu trên YouTube" src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen hidden></iframe>
+                </div>
+                <div class="player-controls" role="group" aria-label="Chọn trình phát">
+                    <button class="player-mode active" type="button" data-mode="html5">Video HTML5</button>
+                    <button class="player-mode" type="button" data-mode="youtube">YouTube</button>
+                    <span class="audio-label">Thuyết minh tiếng Việt</span>
+                </div>
+                <div class="film-description">
+                    <p id="film-summary">Một khu vườn nhỏ đầy điều kỳ diệu đang chờ Mèo Mây khám phá.</p>
+                    <div class="film-facts"><span>Phù hợp mọi lứa tuổi</span><span id="view-count">12,8 nghìn lượt xem</span></div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer><span>GÓC HOẠT HÌNH</span><span>Phim vui, chọn lọc cho cả gia đình</span></footer>
+</body>
+</html>

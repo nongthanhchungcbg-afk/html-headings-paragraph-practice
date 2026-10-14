@@ -19,6 +19,7 @@ Mỗi bài nằm trong một thư mục riêng; mở file HTML được chỉ ra
 | Trang chủ giản lược với header fixed và sidebar | `FixedHeaderHomePractice/index.html` (`style.css`) |
 | Menu dọc dropdown bằng CSS | `CSSVerticalDropdownPractice/index.html` (`style.css`) |
 | Menu ngang dropdown bằng CSS | `CSSHorizontalDropdownPractice/index.html` (`style.css`) |
+| Website xem hoạt hình | `CartoonStreamingPractice/index.html` (`style.css`, `script.js`, `assets/`, `media/`) |
 | Sử dụng thẻ hình ảnh | `HTMLImagePractice/index.html` |
 | Form cơ bản | `HTMLFormsPractice/simpleform.html` |
 | Tạo form tìm kiếm Google | `GoogleSearchPractice/index.html` |
